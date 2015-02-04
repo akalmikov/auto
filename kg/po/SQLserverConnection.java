@@ -13,7 +13,7 @@ public class SQLserverConnection {
 * @param args
 */
 	@Test
-	public void SQLserverConnection() throws ClassNotFoundException, SQLException {
+	public SQLserverConnection() throws ClassNotFoundException, SQLException {
 
 	String dburl = "jdbc:sqlserver://vm-customdev/Kidzandgo_test";
 	String uname = "Kidzandgo_dev_user";

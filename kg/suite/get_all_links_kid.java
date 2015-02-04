@@ -8,7 +8,7 @@ import po.Before_all;
 import po.get_all_links;
 import suite.Signin;
 
-public class get_all_links_parent {
+public class get_all_links_kid {
 
 	WebDriver driver;
 	
@@ -17,7 +17,7 @@ public class get_all_links_parent {
 		
 		Before_all before = new Before_all();
 		driver = before.before_all();		
-		Signin.test_signin_as_parent(driver);		
+		Signin.test_signin_as_kid(driver);		
 		get_all_links.get_links(driver);
 		driver.quit();
 	}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="straval"/>
+	<classpathentry kind="src" path="linktops"/>
+	<classpathentry kind="src" path="kg"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-7-openjdk-amd64"/>
+	<classpathentry kind="lib" path="/home/test/selenium-server-standalone-2.43.0.jar"/>
+	<classpathentry kind="lib" path="/home/test/Downloads/selenium-java-2.43.0.zip"/>
+	<classpathentry kind="lib" path="/home/test/Downloads/sqljdbc_4.1/enu/sqljdbc41.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

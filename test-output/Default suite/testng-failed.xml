@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="suite.get_all_links">
+      <class name="tests.signin_test">
         <methods>
-          <include name="get_links"/>
+          <include name="as_parent"/>
+          <include name="as_merch"/>
         </methods>
-      </class> <!-- suite.get_all_links -->
+      </class> <!-- tests.signin_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

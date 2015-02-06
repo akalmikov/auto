@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="220639" started-at="2015-02-04T15:12:06Z" finished-at="2015-02-04T15:15:47Z">
+  <suite name="Default suite" duration-ms="39856" started-at="2015-02-06T12:28:50Z" finished-at="2015-02-06T12:29:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="220639" started-at="2015-02-04T15:12:06Z" finished-at="2015-02-04T15:15:47Z">
-      <class name="suite.get_all_links_unautorized">
-        <test-method status="PASS" signature="test()[pri:0, instance:suite.get_all_links_unautorized@7f7e9b52]" name="test" duration-ms="220614" started-at="2015-02-04T17:12:06Z" finished-at="2015-02-04T17:15:47Z">
+    <test name="Default test" duration-ms="39856" started-at="2015-02-06T12:28:50Z" finished-at="2015-02-06T12:29:30Z">
+      <class name="tests.signin_test">
+        <test-method status="PASS" signature="as_merch()[pri:0, instance:tests.signin_test@4aa0a82c]" name="as_merch" duration-ms="22015" started-at="2015-02-06T14:28:50Z" finished-at="2015-02-06T14:29:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- suite.get_all_links_unautorized -->
+        </test-method> <!-- as_merch -->
+        <test-method status="PASS" signature="as_parent()[pri:0, instance:tests.signin_test@4aa0a82c]" name="as_parent" duration-ms="17753" started-at="2015-02-06T14:29:12Z" finished-at="2015-02-06T14:29:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- as_parent -->
+      </class> <!-- tests.signin_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

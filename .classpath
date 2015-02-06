@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="/home/test/selenium-server-standalone-2.43.0.jar"/>
 	<classpathentry kind="lib" path="/home/test/Downloads/selenium-java-2.43.0.zip"/>
 	<classpathentry kind="lib" path="/home/test/Downloads/sqljdbc_4.1/enu/sqljdbc41.jar"/>
+	<classpathentry kind="lib" path="/home/test/Downloads/ee.minimum-1.0.0.jar.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

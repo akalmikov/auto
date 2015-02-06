@@ -10,7 +10,7 @@ public class Before_all {
 
 	WebDriver driver;
 	GenerateData genData;
-	
+	String base_url = "http://192.168.3.133:8004";
 	@BeforeMethod
 	public WebDriver before_all(){
 		
@@ -18,7 +18,7 @@ public class Before_all {
 		genData=new GenerateData();
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://192.168.3.133:8004");
+		driver.get(base_url);
 		return driver;
 	}
 	

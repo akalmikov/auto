@@ -1,15 +1,14 @@
 package po;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.testng.Assert;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 //import org.openqa.selenium.*;
 
@@ -26,7 +25,7 @@ public class get_all_links1 {
 	  
 	  System.out.println(elementList.size());
 
-	  List<WebElement> finalList = new ArrayList<WebElement>(); ;
+	  List<WebElement> finalList = new ArrayList<WebElement>();
 	  for (WebElement element : elementList)
 	  {
 		  element.getAttribute("href");
@@ -47,8 +46,9 @@ public class get_all_links1 {
 		    connection.connect();
 		    responsec = connection.getResponseCode();
 		    //System.out.println(connection.getResponseCode());
-		    if (responsec != 404){ 
+		    if (responsec != 404 && responsec !=500 && responsec !=503 && responsec !=501){
 		    	return true;}
+
 		    //out = new StringBuilder().append(responsem).append(responsec).toString();
 		    	//out= Integer.toString(responsec);
 		    else {return false;}
@@ -71,7 +71,7 @@ public class get_all_links1 {
 		    	try
 		    	{
 		    		Assert.assertEquals(true, isLinkBroken(new URL(element.getAttribute("href"))));
-			        System.out.println("URL: " + element.getAttribute("href")+ " returned " + isLinkBroken(new URL(element.getAttribute("href"))));
+			        System.out.println("URL: " + element.getAttribute("href")+ " RETURNED " + isLinkBroken(new URL(element.getAttribute("href")))+" "+element.getText());
 		    		//System.out.println("URL: " + element.getAttribute("outerhtml")+ " returned " + isLinkBroken(new URL(element.getAttribute("href"))));
 		    	}
 		    	catch(Exception exp)
